@@ -26,6 +26,7 @@ use App\Http\Controllers\GameController;
 
 //estructura pendiente de ir añadiendo las rutas 
 Route::post('/login', [UserController::class, 'login'])->name('login');
+Route::post('/players', [UserController::class, 'register']);
 
 Route::middleware('auth:api')->group(function () {
 
